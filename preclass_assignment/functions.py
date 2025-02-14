@@ -1,3 +1,4 @@
+
 #%% EXERCISE 1
 
 def printing_word(word):
@@ -21,7 +22,7 @@ def square_list(numbers):
 
 #%% EXERCISE 4
 def fibonacci_stop(maximum):
-    series = [0, 1]
+    series = [1, 1]
     while (series[-1]+series[-2])<= maximum:
         series.append(series[-1]+series[-2])
     return series
@@ -33,9 +34,3 @@ def clean_pitch(angles,status):
         if (angles[ii]<0 or angles[ii]>90) and status[ii] !=0:
             correct_angles[ii] = -999
     return correct_angles
-#%% MAIN
-printing_word('Francesco')
-length_bed(152)
-final_list = square_list([1, 2, 3])
-fibonacci = fibonacci_stop(30)
-correct_angles = clean_pitch([-1, 2, 6, 95], [1, 0, 0, 0])
